@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.png');
+    background-size: contain;
+    z-index: 2;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #EBF5FD;
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    background-image: url('../img/tijolos.webp');
+}
+.botao {
+    font-size: 20px;
+    background-color: white;
+    color: #50AF49;
+    font-weight: 600;
+    padding: 0.9rem 5rem;
+    border-radius: 10px;
+    border: none;
+}
+.botao:hover {
+    color: white;
+    background-color: #50AF49;
+}
+#section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #259BFF;
+}
+#titulo {
+    font-size: 50px;
+    text-align: center;
+    color: #ff0015;
+}
+#game {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gas {
+    position: absolute;
+    left: 0;
+    height: 500px;
+    width: 4%;
+    grid-row: 2;
+    grid-column: 1/2;
+    background: #74fe24;
+    border: 2px solid black;
+}
+#esgotamento {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#window {
+    grid-row: 2;
+    grid-column: 2/3;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.boneco {
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha-de-obstaculo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.obstaculo {
+    background-image: url('../img/grama.jpg');
+    height: 100px;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 80px;
+    z-index: 1;
+}
+.img-moeda, .img-combustivel  {
+    position: absolute;
+    height: 80px;
+}
+.bonecoImg {
+    width: 80px;
+}
+
